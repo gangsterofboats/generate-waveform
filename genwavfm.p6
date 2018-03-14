@@ -40,7 +40,7 @@ sub MAIN (Str :i($input), Str :o($output))
                 }
 
                 $output_filename = $output ~ $output_filename;
-                # run 'audiowaveform', '-i', $file.absolute, '-o', $output_filename, '-e', $length, '-w', '1600', '-h', '500';
+                run 'audiowaveform', '-i', $file.absolute, '-o', $output_filename, '-e', $length, '-w', '1600', '-h', '500';
             }
         }
     }
